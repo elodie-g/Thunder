@@ -1,0 +1,26 @@
+{
+  "name": "thunder",
+  "version": "1.0.0",
+  "description": "An amazing editor",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^4.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elodie-g/Thunder.git"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elodie-g/Thunder/issues"
+  },
+  "homepage": "https://github.com/elodie-g/Thunder#readme"
+}
