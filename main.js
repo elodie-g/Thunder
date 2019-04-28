@@ -9,8 +9,13 @@ function creationFenetre () {
   fenetrePrincipale.loadFile('content/index.html')
   // Cache la barre d'outil
   fenetrePrincipale.setMenuBarVisibility(false)
+  console.log("Fenêtre créer");
 }
 
 application.on('ready', creationFenetre)
 
-console.log("Fenêtre créer");
+
+application.on('window-all-closed', () => {
+    console.log("l'application va ce fermé");
+    application.quit();
+});
