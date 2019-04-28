@@ -1,14 +1,16 @@
-const { app, BrowserWindow } = require('electron')
+const electron = require('electron');
+const application = electron.app;
+const fenetreNavigateur = electron.BrowserWindow;
 
-function createWindow () {
+function creationFenetre () {
   // Cree la fenetre du navigateur
-  let win = new BrowserWindow({ width: 800, height: 600, show: true , frame: true})
+  let fenetrePrincipale = new fenetreNavigateur({ width: 800, height: 600, show: true , frame: true})
   // and load the index.html of the app.
-  win.loadFile('content/index.html')
+  fenetrePrincipale.loadFile('content/index.html')
   // Cache la barre d'outil
-  win.setMenuBarVisibility(false)
+  fenetrePrincipale.setMenuBarVisibility(false)
 }
 
-app.on('ready', createWindow)
+application.on('ready', creationFenetre)
 
-console.log("Window created");
+console.log("Fenêtre créer");
